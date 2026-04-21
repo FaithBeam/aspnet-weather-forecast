@@ -30,6 +30,7 @@ var summaries = new[]
 
 app.MapGet("/healthz", () => "Healthy").WithName("GetHealthz");
 
+app.MapGet("/something", () => "SOMETHING!").WithName("GetSomething");
 app.MapGet(
         "/weatherforecast",
         () =>
